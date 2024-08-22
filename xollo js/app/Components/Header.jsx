@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const Header = () => {
   return (
     
-    <div className='h-[50px] w-full justify-between flex items-center p-5'>
+    <div className='h-[50px] w-full justify-between bg-white text-black flex items-center p-5'>
       <div className=" cursor-pointer">
         <Link href="/" className="text-xl font-bold">
           Xollo

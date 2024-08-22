@@ -7,11 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      backgroundColor: {
+        "bg-primary": "var(--primary-color)",
+        "bg-primary-dark": "var(--primary-color-dark)"
       },
+      fontFamily: {
+        'archivo': ['Archivo', 'sans-serif'],
+      },
+      fontWeight: {
+        'thin': 200, // Add 'thin' with a corresponding numeric value
+        'normal': 400,
+        // ... other font weights you might have
+      },
+      fontStyle: {
+        'normal': 'normal',
+        'italic': 'italic',
+      }
     },
   },
   plugins: [],
