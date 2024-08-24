@@ -1,13 +1,28 @@
-import React from 'react'
 
-const page = () => {
+import Section from '../components/cardSection.jsx';
+
+export default function page() {
+  const sections = [
+    {
+      title: 'Our Projects',
+      cards: [{ title: 'xollo.learn' }, { title: 'xollo.learn' }, { title: 'xollo.learn' }]
+    },
+    {
+      title: 'Top Art Section',
+      cards: Array(6).fill({ title: 'xollo.learn' }) // 6 cards
+    },
+    {
+      title: 'Others',
+      cards: [{ title: 'xollo.learn' }, { title: 'xollo.learn' }, { title: 'xollo.learn' }]
+    },
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-fuchsia-300">
-      <div className="flex items-center justify-center w-full ">
-        <h1 className="text-6xl text-orange-800"> OUR PROJECTS</h1>
-      </div>
-    </main>
-  )
+    <div className="container mx-auto px-4">
+      {sections.map((section, index) => (
+        <Section key={index} title={section.title} cards={section.cards} />
+      ))}
+    </div>
+  );
 }
 
-export default page
