@@ -1,28 +1,19 @@
+// pages/page.js
+import React from 'react';
+import Section from '../components/cardSection';
+import sectionsData from '../Components/OurProjectData'; // Importing the data from the external file
 
-import Section from '../components/cardSection.jsx';
-
-export default function page() {
-  const sections = [
-    {
-      title: 'Our Projects',
-      cards: [{ title: 'xollo.learn' }, { title: 'xollo.learn' }, { title: 'xollo.learn' }]
-    },
-    {
-      title: 'Top Art Section',
-      cards: Array(6).fill({ title: 'xollo.learn' }) // 6 cards
-    },
-    {
-      title: 'Others',
-      cards: [{ title: 'xollo.learn' }, { title: 'xollo.learn' }, { title: 'xollo.learn' }]
-    },
-  ];
-
+export default function Page() {
   return (
     <div className="container mx-auto px-4">
-      {sections.map((section, index) => (
-        <Section key={index} title={section.title} cards={section.cards} />
+      {sectionsData.map((section, index) => (
+        <Section 
+          key={index} 
+          title={section.title} 
+          sectionDescription={section.sectionDescription} 
+          cards={section.cards} 
+        />
       ))}
     </div>
   );
 }
-
