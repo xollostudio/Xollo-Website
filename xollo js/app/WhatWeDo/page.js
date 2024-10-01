@@ -14,7 +14,7 @@ const page = () => {
           <p className="w-full text-center">Xollo Studio</p>
           <h1 className="xl:text-8xl text-xl mb-4 text-start">
             {" "}
-            Here's what we do
+            Heres what we do
           </h1>
         </div>
       </main>
@@ -22,7 +22,7 @@ const page = () => {
         <div className="h-full w-full xl:w-1/2  flex gap-10">
           <p className="w-1/3">(CREATIVE DESIGN)</p>
           <p className="w-2/3">
-            We don't do cookie-cutter solutions. Our user-centered design
+            We dont do cookie-cutter solutions. Our user-centered design
             encourages productivity and boosts revenue.
           </p>
         </div>
@@ -36,7 +36,7 @@ const page = () => {
         </div>
         <div className="w-full h-[40vh] bg-[#CECECE] flex items-start xl:justify-end p-16 rounded-3xl">
           <p className="xl:w-1/4 w-full">
-            We don't do cookie-cutter solutions. Our user-centered design
+            We dont do cookie-cutter solutions. Our user-centered design
             encourages productivity and boosts revenue.
           </p>
         </div>
@@ -67,7 +67,7 @@ const page = () => {
         </div>
         <div className="w-full h-[40vh] bg-[#CECECE] flex items-start xl:justify-end p-16 rounded-3xl">
           <p className="xl:w-1/4 w-full">
-            We don't do cookie-cutter solutions. Our user-centered design
+            We dont do cookie-cutter solutions. Our user-centered design
             encourages productivity and boosts revenue.
           </p>
         </div>
